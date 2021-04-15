@@ -45,7 +45,7 @@ Eredetileg amperometriás detektálásokra lett kifejlesztve a technika, de nagy
 
 \subsection{Működése}
 
-A SPM alapja, a többi mikroszkópiás technikához hasonlóan, a raszteres képalkotás. A mérőcsúcsot, ami jelen esetben egy mikroelektród, mozgatjuk egy előre meghatározott algoritmus szerint, a vizsgálandó minta felett \ref{fig:PEKM}. A mikroelektród egy mikromanipulátorhoz van rögzítve, amit egy számítógépes programmal egyszerűen kezelhetünk. Általában meanderező mozgást követ a szoftver, de lehet például vonalpásztázást és összetett vonalpásztázást is alkalmazni algoritmusként \cite{kiss2014new}. A mérések előtt kell megadnunk a paramétereket a programnak (mozgás, lépésköz és ennek ideje, intervallum).  megkülönböztetünk amperometriás és potenciometriás méréseket. Amperometriás mód esetén a cella egy mérőelektródból, egy referencia elektródból és egy segédelektródból áll. A mérőelektródot mozgatjuk, míg a referencia- és segédelektród a pásztázási területtől odébb helyezkedik el, hogy ne zavarja a mérést. Potenciometriás módban pedig egy referencia elektródból és egy ionszelektív elektródból épül fel a cella, és az ionszelektív elektród potenciálját mérjük a referencia elektródunkhoz képest.
+A SPM alapja, a többi mikroszkópiás technikához hasonlóan, a raszteres képalkotás. A mérőcsúcsot, ami jelen esetben egy mikroelektród, mozgatjuk egy előre meghatározott algoritmus szerint, a vizsgálandó minta felett (\ref{fig:PEKM}. ábra). A mikroelektród egy mikromanipulátorhoz van rögzítve, amit egy számítógépes programmal egyszerűen kezelhetünk. Általában meanderező mozgást követ a szoftver, de lehet például vonalpásztázást és összetett vonalpásztázást is alkalmazni algoritmusként \cite{kiss2014new}. A mérések előtt kell megadnunk a paramétereket a programnak (mozgás, lépésköz és ennek ideje, intervallum).  megkülönböztetünk amperometriás és potenciometriás méréseket. Amperometriás mód esetén a cella egy mérőelektródból, egy referencia elektródból és egy segédelektródból áll. A mérőelektródot mozgatjuk, míg a referencia- és segédelektród a pásztázási területtől odébb helyezkedik el, hogy ne zavarja a mérést. Potenciometriás módban pedig egy referencia elektródból és egy ionszelektív elektródból épül fel a cella, és az ionszelektív elektród potenciálját mérjük a referencia elektródunkhoz képest.
 
 \begin{figure}
 \centering
@@ -58,9 +58,18 @@ A SPM alapja, a többi mikroszkópiás technikához hasonlóan, a raszteres kép
 
 Az elektroanalitikában elengedhetetlen mérőeszközök az elektródok. Ezen belül is célirányosan érdemes alkalmazni a különböző elektródokat, mint például potenciometria, konduktometria, amperometria, coulombometria stb. esetén.
 Több csoportra oszthatjuk a potenciometriás elektródokat, különböző típusuk szerint \cite{kalman2002az}:
-\begin{lstlisting}  
-   
-\end{lstlisting}
+\begin{enumerate}  
+    \item Ionszelektív elektródok
+      \begin{enumerate}
+	\item Üvegelektród
+	\item Nem üvegalapú membrán-elektród
+	\item Folyadékmembrán-elektród
+	\item Enzimelektród
+	\item Gázelektród
+	\end{enumerate}
+    \item Redoxi elektródok (Zérus fajú)
+    \item Elsőfajú és másodfajú elektródok
+\end{enumerate}
 Ionszelektív elektródok együttes elvi alapja az ioncsere-egyensúly. Az oldatbeli koncentrációkat vizsgáljuk egy ismert koncentrációjú standardhoz viszonyítva. A két koncentráció különbség, illetve a mért potenciálkülönbség alapján számíthatjuk ki a az elsődleges ion aktivitását. Az esetek többségében egy adott ionra szelektívek, az oldatban előforduló zavaró ionok hatása ellenében is szelektív választ adnak. Ezek figyelembevételével a detektált potenciál értéket a Nikolszkij-Eisenmann-egyenlet írja le:
 
 ahol a$_i$  a mérendő és a$_j$ a zavaró ionok aktivitása, n$_i$ és n$_j$ ezen ionok töltése, K$_ij$ az ionszelektív elektród szelektivitási tényezője, E az ionszelektív elektródpotenciál, E$_0$ pedig a standard elektródpotenciál.
@@ -76,7 +85,7 @@ Referencia elektródoknak nevezzük azon elektródokat, melyek stabil és ismert
 
 Szakirodalomból példának véve az Ag/AgCl elektróddal szemléltetném a felépítését \cite{janz1968silver}. Az elektródban egy fém ezüst szál található, amit ezüst-klorid von be, és telített klorid-ion oldatba merül. Ilyen lehet például ismert koncentrációjú KCl-oldat, és ez addig telített az AgCl-ra, míg az elektródon szilárd ezüst-klorid fellelhető.
 
-Általános felépítése ábrázolva : Ag (sz) AgCl (sz) Cl$^-$ (aq)
+Általános felépítése ábrázolva : Ag(sz) | AgCl(sz) | Cl$^-$(aq)
 
 A benne lévő csapadék anionjára nézve reverzibilis elektródként működik. Vagyis az elektrolit oldatban állandó értékű ionkoncentráció következménye, hogy az elektród potenciálja is állandó értéket mutat. Így tehát, ha egy rendszer koncentrációváltozását kívánjuk nyomon követni, akkor a referencia elektródot egy mérőelektróddal kapcsoljuk össze, és a két elektród közötti potenciálkülönbség a mérőelektród potenciál változását fogja mutatni.
 
