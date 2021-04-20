@@ -1,0 +1,17 @@
+set samples 200
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 41,31,10 gauss 80,80
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "E vs. Ag/AgCl/3M KCl / mV"
+set term postscript enhanced color
+set palette rgbformulae -33, -13, -10
+set size ratio 0.66666
+set size 0.8,0.625
+set cbrange [-300:-265]
+set out "grafit_h_100.eps"
+set label "E" at 100,2700 tc rgb "white" font ",30" front
+splot "grafit - h - 1058 100 um.dat" notitle
+

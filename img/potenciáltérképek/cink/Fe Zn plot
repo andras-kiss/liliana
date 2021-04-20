@@ -1,0 +1,17 @@
+set samples 200
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 31,21,10 gauss 80,80
+splot 'Fe - h - 1108 100 um.dat'
+set cbrange [-250:-275]
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "E vs. Ag/AgCl/3M KCl / mV"
+set term postscript enhanced color
+
+set size ratio 0.66666
+set size 0.6,0.5
+
+set size ratio 0.33333
+set size 1,0.5

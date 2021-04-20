@@ -1,0 +1,4 @@
+splot 'Fe - horizontal - 100 um.dat' u 
+set cbrange [-250:-275]
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"

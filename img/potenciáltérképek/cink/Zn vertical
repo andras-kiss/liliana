@@ -1,0 +1,18 @@
+set samples 200
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 31,21,10 gauss 80,80
+set cbrange [-250:-275]
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "E vs. Ag/AgCl/3M KCl / mV"
+set term postscript enhanced color
+set palette rgbformulae -33, -13, -10
+set size ratio 0.33333
+set size 1,0.5
+set cbrange [-240:-230]
+set out "Zn_v.eps"
+set label "B" at 100,800 tc rgb "white" font ",30" front
+splot "Zn - v - 1011.dat" notitle
+

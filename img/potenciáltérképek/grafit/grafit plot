@@ -1,0 +1,16 @@
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 41,31,10 gauss 80,80
+splot 'grafit - h - 1058 100 um.dat'
+set cbrange [-265:-300]
+splot 'grafit - h - 1058 100 um.dat'
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "E vs. Ag/AgCl/3M KCl / mV"
+set term postscript enhanced color
+set size ratio 0.66666
+set size 0.8,0.625
+set out 'grafit - h - 1058 100 um.eps'
+splot 'grafit - h - 1058 100 um.dat'
+
