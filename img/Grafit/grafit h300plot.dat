@@ -1,0 +1,26 @@
+splot "grafit_h300.dat" u ($1):($2):($3):($5):($6):(($7-450)) with vectors notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "F" at 3900,2900,400 tc rgb "black" font ",30" front
+
+splot "grafit_h300_field.dat" u ($1):($2):($3):($5):($6):($7) with vectors notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "C" at 3900,100,-20 tc rgb "black" font ",30" front
+
+set samples 200
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 41,31,10 gauss 80,80
+splot "grafit_h300_field.dat" u ($1):($2):(($7-25)*10) notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "{/Symbol m}A"
+set cbrange [-10:50]
+set palette rgbformulae -33, -13, -10
+set label "C" at 100,2800 tc rgb "black" font ",30" front
+set size ratio 0.66666
+set size 0.8,0.625
+set term postscript enhanced color
+set out "grafit_h_300.eps"

@@ -1,0 +1,7 @@
+plot "Fe_v.dat" u ($1):($2):($4):(($5-300)) with vectors notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set yr [-2000:2000]
+set label "A" at 100,-1500 tc rgb "black" font ",30" front
+
+

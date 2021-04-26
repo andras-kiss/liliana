@@ -1,0 +1,21 @@
+splot "Zn_h500.dat" u ($1):($2):($3):($5):($6):(($7+100)) with vectors notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "D" at 100,100,-500 tc rgb "black" font ",30" front
+
+splot "Zn_h500_field.dat" u ($1):($2):($3):($5):($6):($7) with vectors notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "B" at 2900,1900,-80 tc rgb "black" font ",30" front
+
+set samples 200
+set isosamples 200
+set pm3d map
+set pm3d interpolate 4,4
+set dgrid 31,21,10 gauss 80,80
+splot "Zn_h500_field.dat" u ($1):($2):(($7-25)*10) notitle
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set cblabel "{/Symbol m}A"
+set palette rgbformulae -33, -13, -10
+set label "B" at 100,1800 tc rgb "black" font ",30" front
