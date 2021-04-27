@@ -1,0 +1,6 @@
+set yr [1000:1100]
+set xr [0:3000]
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "B" at 2900,1900,-60 tc rgb "black" font ",30" front
+splot "Zn_h100.dat" u ($1):($2):($3):($5*30):($6*30):(($7*10+20)) with vectors notitle

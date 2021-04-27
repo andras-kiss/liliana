@@ -1,6 +1,0 @@
-plot "grafit_v.dat" u ($1):($2):($4):(($5-300)) with vectors notitle
-set xlabel "X / {/Symbol m}m"
-set ylabel "Y / {/Symbol m}m"
-set xr [0:5000]
-set label "C" at 100,-500 tc rgb "black" font ",30" front
-

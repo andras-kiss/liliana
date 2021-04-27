@@ -1,4 +1,0 @@
-splot "Fe_h100.dat" u ($1):($2):($3):($5):($6):($7-200) with vectors notitle
-set xlabel "X / {/Symbol m}m"
-set ylabel "Y / {/Symbol m}m"
-set label "A" at 100,100,800 tc rgb "black" font ",30" front

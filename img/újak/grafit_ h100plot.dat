@@ -1,0 +1,6 @@
+set yr [1500:1600]
+set xr [0:4000]
+set xlabel "X / {/Symbol m}m"
+set ylabel "Y / {/Symbol m}m"
+set label "C" at 3900,2900,-20 tc rgb "black" font ",30" front
+splot "grafit_h100.dat" u ($1):($2):($3):($5*30):($6*30):(($7*10-30)) with vectors notitle
