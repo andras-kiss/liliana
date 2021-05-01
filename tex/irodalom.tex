@@ -123,13 +123,13 @@ Sok előnyös tulajdonságaik ellenére, a fémek és ötvözeteik spontán korr
 
 Diplomamunkám szempontjából fontos megemlítenem a korróziós reakciók során kialakuló elektromos mezőt is \cite{morley1994principles}. Ez minden elektromos töltést körbevesz és a közegben a töltések egymásra hatást gyakorolnak, taszítják vagy vonzzák egymást. Faraday megfogalmazása szerint a töltéssel rendelkező részecskék maguk hozzák létre ezt a mezőt, mely segítségével erőt képesek kifejteni egymásra. Matematikában ezt egy vektor mezőként definiáljuk, mely a tér minden egyes pontjához egy töltést rendel, amire adott erő hat (vagyis iránnyal és nagysággal is rendelkezik) \cite{purcell2013electricity}. Coulomb törvénye szerint a stacionárius töltések esetében az elektromos mező az adott töltés távolságának négyzetével fordítottan arányosan és a töltéssel arányosan változik. Tehát, ha a töltést duplázzuk, az elektromos mező is ennyivel nő, ha pedig a távolságot vesszük kétszeresnek, a mező ereje azon az adott pontban negyede lenne. Mértékegysége a V/m, ami a N/C-al ekvivalens. Elektromos potenciál mérése esetében a referencia elektródhoz képest mérünk potenciálkülönbséget. Így a közeg két pontjában mért potenciál értéket nevezzük potenciálkülönbségnek, az adott pontok közt. Fizikában a következőképpen definiáljuk, a Nabla-operátor alkalmazásával:
 \begin{equation}
-{E} = - \nabla \Phi - \frac{ \partial \mathbf{A} }{ \partial t}
+{E} = - \nabla \Phi
 \label{eq:field}
 \end{equation}
-Ahol $\nabla \Phi$ az elektromos mező gradiense és $\frac{ \partial \mathbf{A} }{ \partial t }$ az A idő szerinti első parciális deriváltja. A Nabla egy matematikában használt vektor differenciál operátor. Alkalmazhatjuk egy dimenzióban, mely esetben egy adott funkció standard deriváltjára utal. Több dimenzióban, vagyis egy mezőre alkalmazva, jelölheti bármely három operátort (grádiense, divergenciája vagy rotációja egy vektor mezőnek). Ez utóbbira a következőképp írható fel:
+Ahol $\nabla \Phi$ az elektromos mező gradiense. A Nabla egy matematikában használt vektor differenciál operátor. Alkalmazhatjuk egy dimenzióban, mely esetben egy adott függvény standard deriváltjára utal. Több dimenzióban, vagyis egy mezőre alkalmazva, jelölheti bármely három operátort (grádiense, divergenciája vagy rotációja egy vektor mezőnek). Ez utóbbira a következőképp írható fel:
 
 \begin{equation}
-{\nabla 3=\left(\begin{matrix}
+{\nabla E=\left(\begin{matrix}
 \frac{\partial E}{\partial x} , 
 \frac{\partial E}{\partial y} ,
 \frac{\partial E}{\partial z}
@@ -142,7 +142,7 @@ Korábban már említett közleményben az Ohm-törvény és a Laplace-egyenlet 
 {i} = - \kappa \nabla E
 \label{eq:field1}
 \end{equation}
-ahol E a potenciál, i az áramsűrűség és $\kappa$ az oldat vezetőképessége. Ez függ az anódos és katódos környezet polarizációs tulajdonságaitól. Ha egyik oldalon magas polarizáltságot mérünk, alacsony értékű áramerősséget detektálhatunk az oldatban. Vagyis a katód és anód között kis potenciálváltozás történik. Magas áramerősség esetében pedig nagyobb potenciálváltozások mérhetőek.
+ahol E a potenciál, i az áramsűrűség és $\kappa$ az oldat fajlagos vezetése. Ez függ az anódos és katódos környezet polarizációs tulajdonságaitól. Ha egyik oldalon magas polarizáltságot mérünk, alacsony értékű áramerősséget detektálhatunk az oldatban. Vagyis a katód és anód között kis potenciálváltozás történik. Magas áramerősség esetében pedig nagyobb potenciálváltozások mérhetőek.
 
 Az előzőleg példaként felvázolt galvánpáron ismertetve, egy erős elektromos mező alakul ki köztük (\ref{fig:field}. ábra), mely a két eltérő fém potenciálkülönbsége eredményeképp jön létre \cite{kiss2017effect}. Ez a felület és a galvánpár közt oszlik el és közvetlen hatással van a mérőelektród potenciáljára is. Tehát a mért potenciál ennek kettőnek az összege. Némely esetben az elsődleges ion aktivitásának potenciálkülönbségét is meghaladhatja egy erősebb elektromos mező potenciálkülönbsége. Emiatt nem kívánt módon zavarhatja a detektált jelet és alá- vagy túlbecsülhetjük az elsődleges ion aktivitását. Viszont, ha az elektródok helye közti potenciálkülönbséget hozzáadjuk az elektród hegyénél mért elsődleges ion aktivitásához, a következő egyenletet kapjuk:
 
