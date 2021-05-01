@@ -9,8 +9,8 @@ set cblabel "{/Symbol m}A/cm^2"
 set cbrange [-200:800]
 set palette rgbformulae -33, -13, -10
 set label "B" at 100,1800 tc rgb "black" font ",30" front
-set size ratio 0.66666
-set size 0.8,0.625
+set size ratio 0.33333
+set size 1,0.5
 set term postscript enhanced color
 set out "Zn_h100.eps"
 splot "Zn_h100_field.dat" u ($1):($2):(($7+25)*(-10)) notitle

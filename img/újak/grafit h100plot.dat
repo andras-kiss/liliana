@@ -9,8 +9,8 @@ set cblabel "{/Symbol m}A/cm^2"
 set palette rgbformulae -33, -13, -10
 set cbrange [-400:600]
 set label "C" at 100,2800 tc rgb "black" font ",30" front
-set size ratio 0.66666
-set size 0.8,0.625
+set size ratio 0.75
+set size 0.9,0.704
 set term postscript enhanced color
 set out "grafit_h_100.eps"
 splot "grafit_h100_field.dat" u ($1):($2):(($7-25)*(10)) notitle
