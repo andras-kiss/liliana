@@ -74,7 +74,7 @@ Az elektroanalitikában elengedhetetlen mérőeszközök az elektródok. A poten
     \item Elsőfajú és másodfajú elektródok
 \end{enumerate}
 
-Ionszelektív elektródok együttes elvi alapja az ioncsere-egyensúly. Az oldatbeli koncentrációkat vizsgáljuk egy ismert koncentrációjú standardhoz viszonyítva. A két koncentráció különbség, illetve a mért potenciálkülönbség alapján számíthatjuk ki az elsődleges ion aktivitását. Ezek az elektródok az esetek többségében egy adott ionra szelektívek, az oldatban előforduló zavaró ionok hatása ellenében is szelektív választ adnak. A detektált potenciál érték és a jelenlévő összes ion aktivitásának kapcsolatát a Nikolszkij--Eisenmann-egyenlet írja le:
+Ionszelektív elektródok együttes elvi alapja az ioncsere-egyensúly \cite{kalman2002az}. Az oldatbeli koncentrációkat vizsgáljuk egy ismert koncentrációjú standardhoz viszonyítva. A két koncentráció különbség, illetve a mért potenciálkülönbség alapján számíthatjuk ki az elsődleges ion aktivitását. Ezek az elektródok az esetek többségében egy adott ionra szelektívek, az oldatban előforduló zavaró ionok hatása ellenében is szelektív választ adnak. A detektált potenciál érték és a jelenlévő összes ion aktivitásának kapcsolatát a Nikolszkij--Eisenmann-egyenlet írja le:
 
 \begin{equation}
 E = E^\theta + \frac{0,059}{n_i}\lg \Big (a_i + K_{ij} a_j^\frac{n_i}{n_j} \Big )
@@ -83,7 +83,7 @@ E = E^\theta + \frac{0,059}{n_i}\lg \Big (a_i + K_{ij} a_j^\frac{n_i}{n_j} \Big 
 
 ahol a$_i$  a mérendő és a$_j$ a zavaró ionok aktivitása, n$_i$ és n$_j$ ezen ionok töltése, K$_{ij}$ az ionszelektív elektród szelektivitási tényezője, E az ionszelektív elektródpotenciál, E$^\theta$ pedig a standard elektródpotenciál.
 
-A redoxi elektródok elvi alapja az elektroncsere egyensúly. Inert nemesfém, platina általában, vagy grafitelektródok biztosítják az elektronátmenetet. A potenciált a Nernst--egyenlet segítségével írhatjuk le:
+A redoxi elektródok elvi alapja az elektroncsere egyensúly \cite{kalman2002az}. Inert nemesfém, platina általában, vagy grafitelektródok biztosítják az elektronátmenetet. A potenciált a Nernst--egyenlet segítségével írhatjuk le:
 
 \begin{equation}
 E = E^\theta + \frac{0,059}{n}\ln \frac{[ox]}{[red]}
@@ -92,7 +92,7 @@ E = E^\theta + \frac{0,059}{n}\ln \frac{[ox]}{[red]}
 
 Elsőfajú elektródok egy elemből vagy fémből és saját ionját oldott állapotban tartalmazó oldatokból állnak, és a felületükön fellépő potenciálváltozás leírható a Nernst--egyenlettel. Általában munkaelektródként használatosak az ilyen típusú elektródok.
 
-Másodfajú elektródok, hasonlóan az elsőfajúhoz, egy reverzibilis fémelektródot tartalmaznak, és ez valamely rosszul oldódó sójával és a só anionjának telített oldatával van egyensúlyban. A fém feladata, hogy az elektronburkába befogadja vagy innen elektront szolgáltasson az elektród működése közben elnyelt vagy keletkező elektronok helyében. Mivel egy rosszul oldódó csapadékos rendszerbe merül a fém, aminek oldata telített, így az ionkoncentráció szorzata is állandó érték. A só anionját tartalmazó telített oldat pedig a megfelelő ionkoncentrációt és a jó elektromos vezetést biztosítja. Ezek az elektródok főként referencia elektródnak használhatóak kitűnően, kis polarizálhatóságuknak köszönhetően.
+Másodfajú elektródok, hasonlóan az elsőfajúhoz, egy reverzibilis fémelektródot tartalmaznak, és ez valamely rosszul oldódó sójával és a só anionjának telített oldatával van egyensúlyban \cite{preisich1960}. A fém feladata, hogy az elektronburkába befogadja vagy innen elektront szolgáltasson az elektród működése közben elnyelt vagy keletkező elektronok helyében. Mivel egy rosszul oldódó csapadékos rendszerbe merül a fém, aminek oldata telített, így az ionkoncentráció szorzata is állandó érték. A só anionját tartalmazó telített oldat pedig a megfelelő ionkoncentrációt és a jó elektromos vezetést biztosítja. Ezek az elektródok főként referencia elektródnak használhatóak kitűnően, kis polarizálhatóságuknak köszönhetően.
 
 Referencia elektródoknak nevezzük azon elektródokat, melyek stabil és ismert elektród potenciállal rendelkeznek \cite{allen2001electrochemical}. A magas stabilitást úgy érhetjük el, ha egy redox rendszert alkalmazunk állandó (pufferelt vagy telített) koncentrációjú reagensekkel a redoxi reakcióban. Leggyakoribb alkalmazási módja, mikor félcellaként használjuk egy elektrokémiai cellában. Így a cella másik felének a potenciálját meg tudjuk határozni. Gyakorlatban főként az Ag/AgCl és Hg/Hg$_2$Cl$_2$ elektródok használatosak. 
 
@@ -160,7 +160,7 @@ Az előzőleg példaként felvázolt galvánpáron ismertetve, egy erős elektro
 
 ahol $\Delta$E a mért potenciálkülönbség, E$_R$ a referencia elektród potenciálja, $\Phi_R$ és $\Phi_M$ a helyi potenciáljai az elektromos mezőnek. 
 
-Kísérleti bizonyítások alapján ez az effektus csökkenthető. Egyik megoldás a problémára, hogy ha a referencia- és mérőelektródot közel helyezzük egymáshoz. Így az elektromos mező, ami a két komponens által érzékelhető, egyenértékű, tehát kioltják egymást. Másik megoldásként elektromos relét alkalmazhatnánk kapcsolóként a galvánpár közt. Ezzel szétkapcsoljuk őket egy nagyon rövid időre, amíg a mérést végezzük.
+Kísérleti bizonyítások alapján ez az effektus csökkenthető \cite{kiss2017effect}. Egyik megoldás a problémára, hogy ha a referencia- és mérőelektródot közel helyezzük egymáshoz. Így az elektromos mező, ami a két komponens által érzékelhető, egyenértékű, tehát kioltják egymást. Másik megoldásként elektromos relét alkalmazhatnánk kapcsolóként a galvánpár közt. Ezzel szétkapcsoljuk őket egy nagyon rövid időre, amíg a mérést végezzük.
 
 
 
